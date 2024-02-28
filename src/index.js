@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
           alert('Bitte geben Sie einen Mahlzeit-Namen und Kalorien ein.');
           return;
         }
+
+      const table = document.querySelector('table');
+      const row = table.insertRow(-1);
+      const cell1 = row.insertCell(0);
+      const cell2 = row.insertCell(1);
+      cell1.textContent = mealName;
+      cell2.textContent = calories;

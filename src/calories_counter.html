@@ -5,26 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modul 323 - Calories Counter </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <body class="h-screen w-screen">
-      <header class="p-4">
-        <div class="max-w-2xl m-auto flex items-center gap-4 border-b-gray-200 border-b pb-4">
-          <img src="logo.png" alt="Logo" class="w-10" />
-          <span class="font-mono font-bold">Modul 323 - Calories Counter</span>
+  </head>
+
+  <body class="h-screen w-screen">
+    <header class="p-4">
+      <div class="max-w-2xl m-auto flex items-center gap-4 border-b-gray-200 border-b pb-4">
+        <img src="logo.png" alt="Logo" class="w-10" />
+        <span class="font-mono font-bold">Modul 323 - Calories Counter</span>
+      </div>
+
+      <div class="max-w-2xl mx-auto py-4">
+        <div class="mb-4">
+          <input class="border p-2 mr-2" type="text" placeholder="Enter meal name..." />
+          <input class="border p-2 mr-2" type="number" placeholder="Enter calories number..." />
+          <button class="bg-green-500 text-white py-2 px-4 rounded">Save</button>
+          <button class="bg-red-500 text-white py-2 px-4 rounded">Cancel</button>
         </div>
-        
+
         <table class="w-full text-left border-collapse">
-          <tr>
-            <th class="border p-2">Meal</th>
-            <th class="border p-2">Calories</th>
-          </tr>
-        <div class="max-w-2xl mx-auto py-4">
-          <div class="mb-4">
-            <input class="border p-2 mr-2" type="text" placeholder="Enter meal name..." />
-            <input class="border p-2 mr-2" type="number" placeholder="Enter calories number..." />
-            <button class="bg-green-500 text-white py-2 px-4 rounded">Save</button>
-            <button class="bg-red-500 text-white py-2 px-4 rounded">Cancel</button>
+            <tr>
+              <th class="border p-2">Meal</th>
+              <th class="border p-2">Calories</th>
+            </tr>
+            <tr>
+              <td class="border p-2">Breakfast</td>
+              <td class="border p-2">420</td>
+                <button class="text-red-500 hover:text-red-700">
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="border p-2">Spaghetti</td>
+              <td class="border p-2">670</td>
+                <button class="text-red-500 hover:text-red-700">
+                </button>
+              </td>
+            </tr>
+          </table>
+          
+          <div class="text-right pr-2 mt-2">
+            <p>Total: 1090</p>
           </div>
+        </div>
 
     </header>
     <div class="max-w-2xl m-auto text-center border-t-gray-200 border-t pt-4">Let's track your Calories</div>
@@ -34,6 +56,6 @@
     <footer class="p-4">
       <div class="max-w-2xl m-auto text-center border-t-gray-200 border-t pt-4">Copyright© - Miralem Banovi</div>
     </footer>
-    <script src="index.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>

@@ -20,3 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const cell2 = row.insertCell(1);
       cell1.textContent = mealName;
       cell2.textContent = calories;
+
+      const totalCalories = parseInt(totalCaloriesElement.textContent.replace('Total: ', '')) + calories;
+      totalCaloriesElement.textContent = 'Total: ' + totalCalories;

@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const totalCalories = parseInt(totalCaloriesElement.textContent.replace('Total: ', '')) + calories;
       totalCaloriesElement.textContent = 'Total: ' + totalCalories;
+
+
+      mealInput.value = '';
+      caloriesInput.value = '';
+    }

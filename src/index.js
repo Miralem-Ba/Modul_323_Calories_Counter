@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-
+    // Referenzen zu den HTML-Elementen
     const mealInput = document.querySelector('input[type="text"]');
     const caloriesInput = document.querySelector('input[type="number"]');
     const saveButton = document.querySelector('.bg-green-500');

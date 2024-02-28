@@ -28,3 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
       mealInput.value = '';
       caloriesInput.value = '';
     }
+
+    saveButton.addEventListener('click', addMeal);
+  });

@@ -37,3 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Klick-Event-Listener für den "Save"-Button
     saveButton.addEventListener('click', addMeal);
   });
+
+  // Funktion zum Aktualisieren der Gesamtkalorien
+function updateTotalCalories() {
+    let total = 0;
+    const rows = document.querySelectorAll('table tr:not(:first-child)'); // Alle Zeilen außer der Kopfzeile
+    rows.forEach(row => {
+      const cells = row.getElementsByTagName('td');
+      total += parseInt(cells[1].textContent || '0'); // Summiert die Kalorienwerte jeder Zeile
+    });
+    document.querySelector('p').textContent = 'Total: ' + total;
+  }
+  
+  

@@ -51,4 +51,13 @@ function updateTotalCalories() {
   
   // Erweiterte Funktion zum Hinzufügen einer Mahlzeit mit Löschbutton
   function addMeal() {
-  
+    
+  // Löschbutton hinzufügen
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent = '🗑️'; // Emoji als Button-Text
+  deleteButton.classList.add('delete-btn', 'text-red-500', 'hover:text-red-700'); // TailwindCSS-Klassen für Styling
+  deleteButton.onclick = function() {
+    // Entfernt die ganze Zeile aus der Tabelle
+    row.remove();
+    updateTotalCalories(); // Die Gesamtkalorien aktualisieren
+  };

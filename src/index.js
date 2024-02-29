@@ -51,7 +51,7 @@ function updateTotalCalories() {
   
   // Erweiterte Funktion zum Hinzufügen einer Mahlzeit mit Löschbutton
   function addMeal() {
-    
+
   // Löschbutton hinzufügen
   const deleteButton = document.createElement('button');
   deleteButton.textContent = '🗑️'; // Emoji als Button-Text
@@ -61,3 +61,10 @@ function updateTotalCalories() {
     row.remove();
     updateTotalCalories(); // Die Gesamtkalorien aktualisieren
   };
+  // Fügen Sie den Button zur Zelle hinzu
+  const cell3 = row.insertCell(2);
+  cell3.appendChild(deleteButton);
+  
+  // Gesamtkalorien aktualisieren
+  updateTotalCalories();
+}

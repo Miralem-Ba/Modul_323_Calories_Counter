@@ -49,4 +49,6 @@ function updateTotalCalories() {
     document.querySelector('p').textContent = 'Total: ' + total;
   }
   
+  // Erweiterte Funktion zum Hinzufügen einer Mahlzeit mit Löschbutton
+  function addMeal() {
   
